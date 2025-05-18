@@ -5,9 +5,9 @@ const options ={
     swaggerDefinition:{
         openapi:"3.0.0",
         info:{
-            title: "Blog de Aprendizaje API",
+            title: "Blog de aprendizaje",
             version: "1.0.0",
-            description: "API para el Blog de Aprendizaje",
+            description: "API de blog de aprendizaje",
             contact:{
                 name: "Fernando Choc",
                 email: "fchoc-2020619@kinal.edu.gt"
@@ -15,12 +15,13 @@ const options ={
         },
         servers:[
             {
-                url: "http://127.0.0.1:3000/blogDeAprendizajeBackend/v1",
+                url: "http://127.0.0.1:3002/blogDeAprendizajeBackend/v1",
             }
         ]
     },
     apis:[
-        "../src/publications/publication.routes.js",
+        "./src/publicacion/publicacion.routes.js",
+        "./src/comentarios/comentarios.routes.js",
     ]
 }
 
